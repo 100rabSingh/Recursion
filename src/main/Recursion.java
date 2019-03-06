@@ -9,8 +9,12 @@ public class Recursion {
     --number;
     countDown(number);
     }
+    static int sum(int number) {
+        return number + sum(--number);
+    }
 
     public static void main(String[] args) {
         countDown(4);
+        sum(4);
     }
 }
